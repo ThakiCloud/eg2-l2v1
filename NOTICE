@@ -1,0 +1,9 @@
+eg2-l2v1
+Copyright 2026 ThakiCloud
+
+This product includes software developed at ThakiCloud.
+
+This repository contains runtime code only. It does not contain or redistribute model weights.
+At run time it downloads the published checkpoint ThakiCloud/eg2-hybrid-w4-media from Hugging Face
+(Apache-2.0), a 4-bit derivative of google/embeddinggemma-2 (Apache-2.0), and uses that checkpoint's
+own eg2_quant.py unchanged.

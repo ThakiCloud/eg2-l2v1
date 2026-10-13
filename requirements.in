@@ -1,0 +1,8 @@
+# eg2-l2v1 top-level requirements. requirements.lock.txt was resolved from this file under constraints.txt (torch==2.11.0).
+# torch and torchvision are not installed from here: install.sh installs torch==2.11.0+cu130 and torchvision==0.26.0+cu130
+# from the official PyTorch index, then the lock with --no-deps.
+transformers==5.19.0
+sentence-transformers
+safetensors
+huggingface_hub
+pillow
