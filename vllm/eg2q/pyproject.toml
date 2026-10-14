@@ -1,0 +1,18 @@
+[project]
+name = "eg2q"
+version = "0.2.0"
+description = "Out-of-tree vLLM plugin that serves the 4-bit ThakiCloud/eg2-hybrid-w4-media checkpoint without re-quantization"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.12"
+# vLLM and torch are pinned by ../requirements.lock.txt and installed by ../install.sh, not resolved here.
+dependencies = []
+
+[project.entry-points."vllm.general_plugins"]
+eg2q = "eg2q:register"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["eg2q"]

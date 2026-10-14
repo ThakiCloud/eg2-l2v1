@@ -1,0 +1,9 @@
+# Top-level dependencies of the vLLM path. The exact environment is requirements.lock.txt.
+# vLLM is the upstream nightly wheel of commit a8260cbc5c020d250b3964141cde8fd839152714 (no fork),
+# which already contains the EmbeddingGemma 2 model support this plugin relies on.
+vllm==0.31.1rc1.dev48+ga8260cbc5
+transformers==5.19.0
+opencv-python-headless
+soundfile
+huggingface_hub
+safetensors
